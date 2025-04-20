@@ -1,18 +1,31 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="src/Componets/CardNews.js" defer></script>
     <script src="src/Componets/TextCustom.js" defer></script>
+    <link rel="stylesheet" href="assets/style.css">
     <title>Document</title>
-</head>
-<body>
-    <card-news></card-news>
+  </head>
+  <body>
+    <div class="news-card">
+      <div class="content_left">
+        <h2 class="title">Título da Notícia</h2>
+        <p class="summary">
+          Uma breve descrição da notícia para chamar a atenção do leitor e
+          resumir o conteúdo principal.
+        </p>
+        <span class="date">20 de abril de 2025</span>
+      </div>
+      <div class="content_right">
+        <img src="https://s2-g1.glbimg.com/qsw6_Vj6EA3TNMTpIh6MvnrjRNc=/0x0:7087x4725/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2025/s/F/uuF8eUQRaF1R998A1cNw/2025-04-20t104146z-1372099867-rc2m1eaaqhkf-rtrmadp-3-usa-vance-vatican.jpg" alt="Imagem da notícia" />
+      </div>
+    </div>
+
     <card-news></card-news>
     <text-custom titulo="Noticia 1"></text-custom>
-    
+
     <text-custom titulo="Noticia 2"></text-custom>
 
-    <text-custom titulo="Noticia 3"></text-custom>
-</body>
+  </body>
 </html>

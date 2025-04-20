@@ -2,7 +2,28 @@ class CardNews extends HTMLElement{
     constructor(){
         super();
         const shadow = this.attachShadow({mode: "open"})
-        shadow.innerHTML = "<h3>Hello Word<h3>"
+        shadow.appendChild(this.build())
+        shadow.appendChild(this.styles())
+    }
+
+    build(){
+        const componentRoot = document.createElement("div")
+        componentRoot.setAttribute("class", "news-card")
+
+        const cardLeft = document.createElement("div")
+        cardLeft.setAttribute("class", "content_left")
+        
+        const cardRight = document.createElement("div")
+        cardRight.setAttribute("class", "content_right")
+
+        componentRoot.appendChild(cardLeft)
+        componentRoot.appendChild(cardRight)
+        
+        return componentRoot;
+    }
+
+    styles(){
+
     }
 }
 
